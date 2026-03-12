@@ -1,0 +1,72 @@
+{
+  "_index": "wazuh-alerts-4.x-2026.03.12",
+  "_id": "X0vj45wBZltRKMMMxXl6",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "previous_log": "ossec: output: 'netstat listening ports':\ntcp 127.0.0.53:53 0.0.0.0:* 419/systemd-resolve\ntcp 127.0.0.54:53 0.0.0.0:* 419/systemd-resolve\nudp 127.0.0.53:53 0.0.0.0:* 419/systemd-resolve\nudp 127.0.0.54:53 0.0.0.0:* 419/systemd-resolve\ntcp 192.168.1.66:443 0.0.0.0:* 796/node\ntcp 127.0.0.1:631 0.0.0.0:* 1334/cupsd\ntcp6 ::1:631 :::* 1334/cupsd\ntcp 0.0.0.0:1514 0.0.0.0:* 2308/wazuh-remoted\ntcp 0.0.0.0:1515 0.0.0.0:* 2216/wazuh-authd\nudp 0.0.0.0:5353 0.0.0.0:* 717/avahi-daemon\nudp6 :::5353 :::* 717/avahi-daemon\ntcp6 192.168.1.66:9200 :::* 1368/java\ntcp6 192.168.1.66:9300 :::* 1368/java\nudp6 :::41368 :::* 717/avahi-daemon\ntcp 0.0.0.0:55000 0.0.0.0:* 2167/python3\ntcp6 :::55000 :::* 2167/python3\nudp6 :::57356 :::* 5998/firefox\nudp 0.0.0.0:59294 0.0.0.0:* 717/avahi-daemon",
+    "input": {
+      "type": "log"
+    },
+    "agent": {
+      "name": "XOrder66",
+      "id": "000"
+    },
+    "previous_output": "Previous output:\nossec: output: 'netstat listening ports':\ntcp 127.0.0.53:53 0.0.0.0:* 419/systemd-resolve\ntcp 127.0.0.54:53 0.0.0.0:* 419/systemd-resolve\nudp 127.0.0.53:53 0.0.0.0:* 419/systemd-resolve\nudp 127.0.0.54:53 0.0.0.0:* 419/systemd-resolve\ntcp 192.168.1.66:443 0.0.0.0:* 796/node\ntcp 127.0.0.1:631 0.0.0.0:* 1334/cupsd\ntcp6 ::1:631 :::* 1334/cupsd\ntcp 0.0.0.0:1514 0.0.0.0:* 2308/wazuh-remoted\ntcp 0.0.0.0:1515 0.0.0.0:* 2216/wazuh-authd\nudp 0.0.0.0:5353 0.0.0.0:* 717/avahi-daemon\nudp6 :::5353 :::* 717/avahi-daemon\ntcp6 192.168.1.66:9200 :::* 1368/java\ntcp6 192.168.1.66:9300 :::* 1368/java\nudp6 :::41368 :::* 717/avahi-daemon\ntcp 0.0.0.0:55000 0.0.0.0:* 2167/python3\ntcp6 :::55000 :::* 2167/python3\nudp6 :::57356 :::* 5998/firefox\nudp 0.0.0.0:59294 0.0.0.0:* 717/avahi-daemon",
+    "manager": {
+      "name": "XOrder66"
+    },
+    "rule": {
+      "firedtimes": 2,
+      "mail": false,
+      "level": 7,
+      "pci_dss": [
+        "10.2.7",
+        "10.6.1"
+      ],
+      "hipaa": [
+        "164.312.b"
+      ],
+      "tsc": [
+        "CC6.8",
+        "CC7.2",
+        "CC7.3"
+      ],
+      "description": "Listened ports status (netstat) changed (new port opened or closed).",
+      "groups": [
+        "ossec"
+      ],
+      "id": "533",
+      "nist_800_53": [
+        "AU.14",
+        "AU.6"
+      ],
+      "gpg13": [
+        "10.1"
+      ],
+      "gdpr": [
+        "IV_35.7.d"
+      ]
+    },
+    "location": "netstat listening ports",
+    "decoder": {
+      "name": "ossec"
+    },
+    "id": "1773349874.397563",
+    "full_log": "ossec: output: 'netstat listening ports':\ntcp 127.0.0.53:53 0.0.0.0:* 419/systemd-resolve\ntcp 127.0.0.54:53 0.0.0.0:* 419/systemd-resolve\nudp 127.0.0.53:53 0.0.0.0:* 419/systemd-resolve\nudp 127.0.0.54:53 0.0.0.0:* 419/systemd-resolve\ntcp 192.168.1.66:443 0.0.0.0:* 796/node\ntcp 127.0.0.1:631 0.0.0.0:* 1334/cupsd\ntcp6 ::1:631 :::* 1334/cupsd\ntcp 0.0.0.0:1514 0.0.0.0:* 2308/wazuh-remoted\ntcp 0.0.0.0:1515 0.0.0.0:* 2216/wazuh-authd\nudp 0.0.0.0:5353 0.0.0.0:* 717/avahi-daemon\nudp6 :::5353 :::* 717/avahi-daemon\ntcp6 192.168.1.66:9200 :::* 1368/java\ntcp6 192.168.1.66:9300 :::* 1368/java\nudp6 :::41368 :::* 717/avahi-daemon\ntcp 0.0.0.0:55000 0.0.0.0:* 2167/python3\ntcp6 :::55000 :::* 2167/python3\nudp 0.0.0.0:59294 0.0.0.0:* 717/avahi-daemon",
+    "timestamp": "2026-03-12T16:11:14.579-0500"
+  },
+  "fields": {
+    "timestamp": [
+      "2026-03-12T21:11:14.579Z"
+    ]
+  },
+  "highlight": {
+    "manager.name": [
+      "@opensearch-dashboards-highlighted-field@XOrder66@/opensearch-dashboards-highlighted-field@"
+    ]
+  },
+  "sort": [
+    1773349874579
+  ]
+}
