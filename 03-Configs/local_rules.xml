@@ -1,0 +1,14 @@
+Add (or ensure you have) something like:
+
+<group name="local,">
+  <rule id="100010" level="10">
+    <if_group>windows</if_group>
+    <match>powershell.exe</match>
+    <match>EncodedCommand</match>
+    <description>Suspicious PowerShell usage with EncodedCommand</description>
+    <mitre>
+      <id>T1059.001</id>
+    </mitre>
+    <group>windows,powershell,suspicious,</group>
+  </rule>
+</group>
