@@ -1,0 +1,18 @@
+### 2️⃣ Sysmon config to support this detection
+
+You want Sysmon to log detailed process creation, including PowerShell command lines.
+
+**File path in GitHub (suggested):**
+
+`03-Configs/sysmon-config.xml`
+
+In your Sysmon config, ensure you have at least:
+
+```xml
+<Sysmon schemaversion="4.50">
+  <EventFiltering>
+    <ProcessCreate onmatch="include">
+      <Image condition="end with">powershell.exe</Image>
+    </ProcessCreate>
+  </EventFiltering>
+</Sysmon>
